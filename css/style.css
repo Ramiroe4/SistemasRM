@@ -1,12 +1,13 @@
 /* Style the header with a grey background and some padding */
-
 .container{
   background-color: white;
 }
 .header {
   overflow: hidden;
-  background-color:  #d0d3d4 ;
-  padding: 20px 10px;
+  border-color: black;
+  padding: 0px 50px;
+  margin: 0px;
+  background-color: #d0d3d4;
 }
 
 /* Style the header links */
@@ -42,6 +43,7 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin-top: 25px;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -69,7 +71,7 @@ img{
   width: 400px;
   font-family: arial;
   font: bold;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 #face{
   width: 150px;
@@ -88,4 +90,8 @@ li{
 footer{
   background-color:  #d0d3d4 ;
   height: 60px;
+}
+.portada{
+  height: 450px;
+  width: 100%;
 }

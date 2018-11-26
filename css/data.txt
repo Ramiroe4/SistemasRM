@@ -1,0 +1,54 @@
+Creamos la tabla de clientes...
+
+Vamos a mysql(Ya sea un administrador o desde la consola)...
+
+Escribimos el siguiente script...
+
+create table clients
+(
+	id int auto_increment primary key not null,
+	identification varchar(100) not null,
+	client_name varchar(100) not null,
+	client_last_name varchar(100) not null,
+	phone int
+);
+
+auto_increment = El id se va incrementando uno a uno...
+primary_key = la llave primaria de esa tabla..
+not null = que no puede ir nulo el campo...
+
+
+
+
+Vamos a crear un modelo de client...
+
+Vamos a la consola y nos ubicamos en el proyecto...
+
+Escribimos el siguiente comando...
+
+php artisan make:model Client
+
+Vamos a app/Client...
+
+Anotamos esto..
+
+	/**
+     * Aquí se agregan los nuevos campos de clientes.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'identification','client_name','client_last_name','phone',
+    ];
+
+Vamos a crear un controlador...
+
+Vamos a la consola y en el proyecto...
+
+Escribimos el siguiente comando...
+
+php artisan make:controller ClientController
+
+Vamos a app/Http/Controllers/Auth/ClientController
+
+Importamos el modelo de Client...
