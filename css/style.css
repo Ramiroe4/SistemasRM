@@ -5,9 +5,22 @@
 .header {
   overflow: hidden;
   border-color: black;
-  padding: 0px 50px;
+  padding: 10px 30px;
   margin: 0px;
-  background-color: #d0d3d4;
+  background-color: #ea2105;
+  background-color: #05eac0;
+  background-color: rgb(70,130 , 700);
+  height: 80px;
+  opacity: 0.5;
+  border: 0px;
+  width: 1400;
+  margin-right: 0px;
+
+}
+.fond{
+  color: #df226c;
+  font-size: 30px;
+  opacity: 0.9;
 }
 
 /* Style the header links */
@@ -34,16 +47,15 @@
   color: black;
 }
 
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
 /* Float the link section to the right */
 .header-right {
   float: right;
-  margin-top: 25px;
+  margin-top: 6px;
+}
+.header-right a{
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -72,6 +84,11 @@ img{
   font-family: arial;
   font: bold;
   margin-top: 60px;
+}
+#fond{
+  height: 350px;
+  width: 500px;
+  margin-top: 45px;
 }
 #face{
   width: 150px;
